@@ -1,0 +1,19 @@
+.pane-conatiner {
+  @apply flex flex-col gap-y-8;
+}
+
+.pane {
+  @apply flex flex-col;
+}
+
+.pane-label {
+  @apply text-xs font-medium text-black;
+}
+
+.pane-label--active {
+  @apply text-primary-500;
+}
+
+.pane-underline {
+  @apply bg-secondary-500 h-1 w-[80%] mx-auto rounded;
+}
