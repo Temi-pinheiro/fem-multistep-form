@@ -9,6 +9,10 @@ export const Step2 = ({ data, update }: { data: any; update: any }) => {
         title='Select your plan'
         details='You have the option of monthly or yearly billing.'
       />
+      <div className='flex items-center justify-center gap-x-6'>
+        <span>Monthly</span>
+        <span>Yearly</span>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { useForm } from '../../hooks/useForm';
 
 export const HomePage = () => {
   const [formData, setFormData] = useState({
-    period: '',
+    period: 'monthly',
     email: '',
     name: '',
     phone: '',
@@ -101,7 +101,7 @@ export const HomePage = () => {
           )}
         </form>
       </div>
-      <footer className='hidden  w-full py-4 md:flex flex-col items-center mt-auto'>
+      <footer className='hidden absolute w-full py-4 md:flex flex-col items-center bottom-2'>
         <span className='text-sm text-blue-950 inline-flex gap-x-1 '>
           {' '}
           View on{' '}
