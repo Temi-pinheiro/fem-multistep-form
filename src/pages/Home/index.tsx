@@ -30,9 +30,9 @@ export const HomePage = () => {
     setStep,
   } = useMultistepForm([
     <Step1 data={formData} update={updateFormData} />,
-    <Step2 />,
-    <Step3 />,
-    <Step4 />,
+    <Step2 data={formData} update={updateFormData} />,
+    <Step3 data={formData} update={updateFormData} />,
+    <Step4 data={formData} update={updateFormData} />,
     <Step5 />,
   ]);
   const { submit, errors, setErrors } = useForm<typeof formData>({

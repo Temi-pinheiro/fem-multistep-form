@@ -1,6 +1,8 @@
 import { Header } from '../components';
 
-export const Step2 = () => {
+export const Step2 = ({ data, update }: { data: any; update: any }) => {
+  console.log({ data, update });
+
   return (
     <div className='flex flex-col'>
       <Header
