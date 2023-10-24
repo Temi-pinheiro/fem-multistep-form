@@ -1,9 +1,5 @@
 button.toggle-container {
-  @apply w-[36px] h-[20px] bg-grey-300 flex  rounded-11xl items-center cursor-pointer px-1;
-}
-
-.toggle-container[data-isOn='true'] {
-  @apply bg-info-500;
+  @apply w-[36px] h-[20px] bg-[#022959] flex  rounded-[10px] items-center cursor-pointer px-1;
 }
 
 .toggle-switch {

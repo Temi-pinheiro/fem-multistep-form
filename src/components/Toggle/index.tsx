@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import './styles.css';
@@ -9,17 +8,10 @@ interface ToggleProps {
 }
 
 export const Toggle = ({ isOn, effect }: ToggleProps) => {
-  // const [disabled, setDisabled]
-  const [yes, setYes] = useState(() => isOn);
   const spring = {
     type: 'spring',
     stiffness: 700,
     damping: 30,
-  };
-
-  const handleToggle = async () => {
-    setYes((prev) => !prev);
-    effect();
   };
 
   return (
@@ -27,12 +19,12 @@ export const Toggle = ({ isOn, effect }: ToggleProps) => {
       <motion.button
         className='toggle-container'
         type='button'
-        data-isOn={yes}
-        onClick={handleToggle}
+        data-isOn={isOn}
+        onClick={effect}
       >
         <motion.div
           className='toggle-switch'
-          animate={{ x: yes ? 16 : 0 }}
+          animate={{ x: isOn ? 16 : 0 }}
           transition={spring}
         />
       </motion.button>
