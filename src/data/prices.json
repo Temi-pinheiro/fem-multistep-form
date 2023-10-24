@@ -1,0 +1,20 @@
+{
+  "prices": {
+    "monthly": {
+      "arcade": { "price": 9, "title": "Arcade" },
+      "advanced": { "price": 12, "title": "Advanced" },
+      "pro": { "price": 15, "title": "Pro" },
+      "onlineServices": { "price": 1, "title": "Online Services" },
+      "largerStorage": { "price": 2, "title": "Larger Storage" },
+      "customizableProfile": { "price": 2, "title": "Customizable Profile" }
+    },
+    "yearly": {
+      "arcade": { "price": 90, "title": "Arcade" },
+      "advanced": { "price": 120, "title": "Advanced" },
+      "pro": { "price": 150, "title": "Pro" },
+      "onlineServices": { "price": 10, "title": "Online Services" },
+      "largerStorage": { "price": 20, "title": "Larger Storage" },
+      "customizableProfile": { "price": 20, "title": "Customizable Profile" }
+    }
+  }
+}
