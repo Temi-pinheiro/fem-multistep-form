@@ -59,11 +59,11 @@ export const HomePage = () => {
           />
           <img
             className='hidden md:inline object-cover inset-0 h-full w-full absolute'
-            src='../../src/assets/images/bg-sidebar-desktop.svg'
+            src='bg-sidebar-desktop.svg'
           />
           <img
             className='inline md:hidden object-cover inset-0 h-full w-full absolute'
-            src='../../src/assets/images/bg-sidebar-mobile.svg'
+            src='bg-sidebar-mobile.svg'
           />
         </aside>
         <form
