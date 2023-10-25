@@ -49,21 +49,21 @@ export const HomePage = () => {
     { id: '3', title: 'STEP 4', desc: 'SUMMARY' },
   ];
   return (
-    <main className='bg-[#EFF5FF] grid w-screen h-screen place-items-center'>
-      <div className='flex items-start gap-x-[100px] rounded-[15px] p-4 bg-white shadow w-full h-full max-w-[940px] max-h-[600px]'>
-        <aside className='md:h-full bg-[#483EFF] rounded-[10px] w-[274px] py-10 px-8 overflow-clip relative'>
+    <main className='bg-[#EFF5FF] grid w-screen h-screen md:place-items-center md:px-6 lg:px-0'>
+      <div className='flex flex-col md:flex-row items-start md:gap-x-10 lg:gap-x-[100px] rounded-[15px] md:p-4 bg-white shadow w-full h-full max-w-[940px] max-h-[600px]'>
+        <aside className='h-[172px] pt-8 md:h-full bg-[#483EFF] md:rounded-[10px] w-full md:w-[274px] md:py-10 md:px-4 lg:px-8 overflow-clip relative'>
           <Panes
             active={currentStepIndex.toString()}
             handleChange={setStep}
             panes={panes}
           />
           <img
-            className='object-cover inset-0 h-full w-full absolute'
+            className='hidden md:inline object-cover inset-0 h-full w-full absolute'
             src='../../src/assets/images/bg-sidebar-desktop.svg'
           />
         </aside>
         <form
-          className='flex flex-col w-full pr-[100px] pt-10 pb-4 h-full'
+          className='flex flex-col w-full md:pr-10 lg:pr-[100px] pt-10 pb-4 h-full'
           onSubmit={submit}
         >
           <motion.div

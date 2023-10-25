@@ -15,13 +15,13 @@ export const Panes = ({ panes, active }: PanesProps) => {
   //todo make sure that the setactive prop is passed down as a prop
 
   return (
-    <ul className='flex flex-col gap-y-8 relative w-full items-start'>
+    <ul className='flex items-center justify-center md:justify-normal  md:flex-col gap-x-8 gap-y-8 relative w-full md:items-start'>
       {panes.map((pane) => (
-        <li className='w-full relative z-10 ' key={pane.id}>
+        <li className='md:w-full relative z-10 ' key={pane.id}>
           <motion.span
             // onClick={() => handleChange(Number(pane.id))}
             key={pane.desc}
-            className='flex items-center gap-x-4 w-full'
+            className='flex items-center gap-x-4 md:w-full'
           >
             <motion.span
               animate={{
@@ -44,7 +44,7 @@ export const Panes = ({ panes, active }: PanesProps) => {
                 )}
               </AnimatePresence>
             </motion.span>
-            <div className='flex flex-col items-start gap-y-1 w-full'>
+            <div className='hidden md:flex flex-col items-start gap-y-1 w-full'>
               <h4 className='text-xs text-[#ABBCFF]'>{pane.title}</h4>
               <p className='text-sm font-bold text-white tracking-wide truncate'>
                 {pane.desc}
