@@ -7,7 +7,7 @@ export const Step1 = ({ data, update }: { data: any; update: any }) => {
         title='Personal info'
         details='Please provide your name, email address, and phone number.'
       />
-      <div className='flex flex-col gap-y-6 md:mt-[35px]'>
+      <div className='flex flex-col gap-y-6 mt-[22px] md:mt-[35px]'>
         <TextInput
           label='Name'
           required

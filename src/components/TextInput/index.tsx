@@ -25,9 +25,9 @@ export const TextInput = ({
   ...props
 }: TextInputProps) => {
   return (
-    <div className='flex flex-col gap-y-2'>
+    <div className='flex flex-col gap-y-[3px] md:gap-y-2'>
       {label && (
-        <label className='text-sm text-[#022959]' htmlFor={name}>
+        <label className='text-xs md:text-sm text-[#022959]' htmlFor={name}>
           {label}
           {required && <span className='input--required'></span>}
         </label>
@@ -41,7 +41,7 @@ export const TextInput = ({
         type={type}
         id={name}
         name={name}
-        className='border rounded-lg border-gray-300 outline-none p-4 font-medium text-[#022959] focus:border-[#483EFF] transition-all duration-300'
+        className='border rounded-lg border-gray-300 outline-none p-4 text-[15px] md:text-base font-medium text-[#022959] focus:border-[#483EFF] transition-all duration-300'
         readOnly={readOnly}
         {...props}
       />

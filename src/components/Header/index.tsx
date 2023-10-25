@@ -7,7 +7,9 @@ export const Header = ({
 }) => {
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='text-[#022959] text-[32px] font-bold'>{title}</h2>
+      <h2 className='text-[#022959] text-2xl md:text-[32px] font-bold'>
+        {title}
+      </h2>
       <p className='leading-[25px] text-gray-400'>{details}</p>
     </div>
   );
