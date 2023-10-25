@@ -2,8 +2,6 @@ import { Addon, Header } from '../components';
 import { prices } from '../data/prices.json';
 
 export const Step3 = ({ data, update }: { data: any; update: any }) => {
-  console.log({ data, update });
-
   return (
     <div className='flex flex-col'>
       <Header

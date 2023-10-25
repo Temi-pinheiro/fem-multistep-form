@@ -11,6 +11,7 @@ export const HomePage = () => {
     email: '',
     name: '',
     phone: '',
+    plan: 'arcade',
   });
   const updateFormData = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -20,6 +21,8 @@ export const HomePage = () => {
     }));
     setErrors({ ...errors, [name]: '' });
   };
+  const goTo = () => setStep(1);
+
   const {
     currentStepIndex,
     step,
@@ -32,14 +35,13 @@ export const HomePage = () => {
     <Step1 data={formData} update={updateFormData} />,
     <Step2 data={formData} update={updateFormData} />,
     <Step3 data={formData} update={updateFormData} />,
-    <Step4 data={formData} update={updateFormData} />,
+    <Step4 data={formData} changeFunction={goTo} />,
     <Step5 />,
   ]);
   const { submit, errors, setErrors } = useForm<typeof formData>({
     submitFunction: next,
     data: formData,
   });
-
   const panes = [
     { id: '0', title: 'STEP 1', desc: 'YOUR INFO' },
     { id: '1', title: 'STEP 2', desc: 'SELECT PLAN' },
@@ -68,8 +70,9 @@ export const HomePage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.3 }}
+            transition={{ duration: 0.68 }}
             key={currentStepIndex}
+            className='h-full'
           >
             {step}
           </motion.div>

@@ -11,15 +11,15 @@ interface PanesProps {
   handleChange: Dispatch<SetStateAction<number>>;
 }
 
-export const Panes = ({ panes, active, handleChange }: PanesProps) => {
+export const Panes = ({ panes, active }: PanesProps) => {
   //todo make sure that the setactive prop is passed down as a prop
 
   return (
     <ul className='flex flex-col gap-y-8 relative w-full items-start'>
       {panes.map((pane) => (
         <li className='w-full relative z-10 ' key={pane.id}>
-          <motion.button
-            onClick={() => handleChange(Number(pane.id))}
+          <motion.span
+            // onClick={() => handleChange(Number(pane.id))}
             key={pane.desc}
             className='flex items-center gap-x-4 w-full'
           >
@@ -65,7 +65,7 @@ export const Panes = ({ panes, active, handleChange }: PanesProps) => {
                 layoutId='user-pane-underline'
               ></motion.div>
             )} */}
-          </motion.button>
+          </motion.span>
         </li>
       ))}
     </ul>

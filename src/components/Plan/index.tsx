@@ -19,6 +19,10 @@ export const Plan = ({
   return (
     <>
       <motion.label
+        initial={{
+          borderColor: '#D6D9E6',
+          backgroundColor: '#fff',
+        }}
         animate={{
           borderColor: selected ? '#483EFF' : '#D6D9E6',
           backgroundColor: selected ? '#F8F9FF' : '#fff',

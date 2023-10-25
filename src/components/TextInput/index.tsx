@@ -41,7 +41,7 @@ export const TextInput = ({
         type={type}
         id={name}
         name={name}
-        className='border rounded-lg border-gray-300 outline-none p-4 font-medium text-[#022959] '
+        className='border rounded-lg border-gray-300 outline-none p-4 font-medium text-[#022959] focus:border-[#483EFF] transition-all duration-300'
         readOnly={readOnly}
         {...props}
       />
