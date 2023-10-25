@@ -28,11 +28,11 @@ export const Plan = ({
           backgroundColor: selected ? '#F8F9FF' : '#fff',
         }}
         whileHover={{ backgroundColor: '#F8F9FF' }}
-        className='rounded-lg border py-5 px-4 flex md:flex-col cursor-pointer '
+        className='rounded-lg border py-[14px] md:py-5 px-4 flex items-center md:items-start md:flex-col cursor-pointer '
         htmlFor={value}
       >
         {icon}
-        <div className='flex flex-col gap-y-2 md:mt-8'>
+        <div className='flex flex-col gap-y-2 ml-3 md:ml-0 md:mt-8'>
           <h3 className='font-medium text-[#022959]'>{title}</h3>
           <motion.span
             initial={{ opacity: 0 }}

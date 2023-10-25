@@ -16,7 +16,7 @@ export const Step2 = ({
         title='Select your plan'
         details='You have the option of monthly or yearly billing.'
       />
-      <div className='flex md:grid grid-cols-3 gap-x-[18px] md:mt-9'>
+      <div className='flex flex-col md:grid md:grid-cols-3 gap-x-[18px] mt-[22px] gap-y-3 md:mt-9'>
         <Plan
           key='arcade'
           updateData={update}
@@ -48,7 +48,7 @@ export const Step2 = ({
           price={prices[data.monthly ? 'monthly' : 'yearly'].pro.price}
         />
       </div>
-      <div className='flex items-center justify-center gap-x-6 py-[14px] bg-[#F8F9FF] md:mt-8'>
+      <div className='flex items-center justify-center gap-x-6 py-[14px] bg-[#F8F9FF] mt-6 md:mt-8'>
         <motion.button
           type='button'
           onClick={() => update({ target: { name: 'monthly', value: true } })}

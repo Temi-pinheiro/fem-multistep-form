@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 export const Step5 = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-full gap-y-8'>
+    <div className='flex flex-col items-center justify-center h-full gap-y-6 py-20 md:py-0 md:gap-y-8'>
       <motion.svg
         width='80'
         height='80'
@@ -17,8 +17,8 @@ export const Step5 = () => {
           fill='#E96170'
         />
         <path
-          fill-rule='evenodd'
-          clip-rule='evenodd'
+          fillRule='evenodd'
+          clipRule='evenodd'
           d='M55.3136 24.6843C51.0784 20.4488 45.5416 18.3333 40.0032 18.3333C34.4648 18.3333 28.9215 20.4488 24.6862 24.6843C16.2156 33.1554 16.2156 46.8423 24.6862 55.3134C33.1568 63.7844 46.8431 63.7844 55.3136 55.3134C63.7842 46.8423 63.7842 33.1554 55.3136 24.6843ZM48.9956 33.6772C49.2455 33.4824 49.552 33.3612 49.8675 33.3323L49.8675 33.3323C49.9238 33.3294 49.9803 33.3294 50.0366 33.3323C51.4237 33.3521 52.1147 35.5287 50.9931 36.3451L37.6672 46.34C37.0328 46.8135 36.0542 46.7432 35.494 46.1839L28.831 39.5206C27.5563 38.2966 29.9626 35.8902 31.1865 37.165L36.8279 42.8067L48.9956 33.6772Z'
           fill='white'
         />

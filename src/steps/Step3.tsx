@@ -8,7 +8,7 @@ export const Step3 = ({ data, update }: { data: any; update: any }) => {
         title='Pick add-ons'
         details='Add-ons help enhance your gaming experience.'
       />
-      <div className='mt-9 flex flex-col gap-y-4'>
+      <div className='mt-[22px] md:mt-9 flex flex-col gap-y-3 md:gap-y-4'>
         <Addon
           key='local'
           updateData={update}

@@ -25,7 +25,7 @@ export const Panes = ({ panes, active }: PanesProps) => {
           >
             <motion.span
               animate={{
-                borderColor: pane.id == active ? 'transparent' : 'white',
+                borderColor: pane.id == active ? '#BEE2FD' : '#fff',
               }}
               transition={{ delay: 0.1 }}
               className={`shrink-0 font-bold w-[33px] overflow-y-clip  relative h-[33px] border grid place-items-center rounded-full text-sm duration-300 transition ease-in-out`}

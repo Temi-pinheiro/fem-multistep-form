@@ -27,7 +27,7 @@ export const Addon = ({
         backgroundColor: selected ? '#F8F9FF' : '#fff',
       }}
       whileHover={{ backgroundColor: '#F8F9FF' }}
-      className='flex items-center border rounded-lg py-[18px] px-6 cursor-pointer'
+      className='flex items-center border rounded-lg py-[14px] md:py-[18px] px-4 md:px-6 cursor-pointer'
       htmlFor={name}
     >
       <input
@@ -43,10 +43,12 @@ export const Addon = ({
         }
       />
       <div className='ml-6 flex flex-col gap-y-2'>
-        <h3 className='font-medium text-[#022959]'>{title}</h3>
+        <h3 className='font-medium text-sm md:text-base text-[#022959]'>
+          {title}
+        </h3>
         <span className='text-sm text-[#9699AA]'>{desc}</span>
       </div>
-      <span className='ml-auto text-sm text-[#483EFF] leading-tight'>
+      <span className='ml-auto text-xs md:text-sm text-[#483EFF] leading-tight'>
         {' '}
         +${price}/{monthly ? 'mo' : 'yr'}
       </span>
