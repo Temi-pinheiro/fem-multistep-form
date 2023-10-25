@@ -51,7 +51,7 @@ export const HomePage = () => {
   return (
     <main className='bg-[#EFF5FF] grid w-screen h-screen md:place-items-center md:px-6 lg:px-0'>
       <div className='flex flex-col md:flex-row items-start md:gap-x-10 lg:gap-x-[100px] rounded-[15px] md:p-4 bg-[#EFF5FF] md:bg-white shadow w-full h-full max-w-[940px] md:max-h-[600px]'>
-        <aside className='h-[206px] pt-8 md:h-full bg-[#483EFF] md:rounded-[10px] w-full md:w-[274px] md:py-10 md:px-4 lg:px-8 md:overflow-clip relative'>
+        <aside className='h-[206px] pt-8 md:h-full bg-[#483EFF] md:rounded-[10px] w-full md:w-[274px] md:block md:py-10 md:px-4 lg:px-8 md:overflow-clip relative'>
           <Panes
             active={currentStepIndex.toString()}
             handleChange={setStep}
@@ -67,7 +67,7 @@ export const HomePage = () => {
           />
         </aside>
         <form
-          className='flex flex-col w-full md:pr-10 lg:pr-[100px] md:pt-10 md:pb-4 h-full'
+          className='flex flex-col w-full md:max-w-[450px]  md:pt-10 md:pb-4 h-full'
           onSubmit={submit}
         >
           <motion.div
